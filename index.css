@@ -1,0 +1,137 @@
+/* --  Tag Level  -- */
+html, body {
+    margin: 0;
+}
+
+h1, h2, h3, header {
+    font-family: "Roboto", sans-serif;
+}
+
+h4, h5 {
+    font-family: "Amiri", serif;
+    margin: 0;
+}
+
+h1 { font-size: 5em; }
+h2 { font-size: 4em; }
+
+header {
+    min-height: 36px;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Amiri", serif;
+}
+
+
+/* --  Generic Class Level  -- */
+.panel {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.content-box {
+    width: 768px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.centered-single-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.justify-children-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-border { border-right: 2px solid #111; }
+.top-border { border-top: 2px solid #111; }
+.bottom-border { border-bottom: 2px solid #111; }
+.left-border { border-left: 2px solid #111; }
+
+.tighten-up { margin-top: -25px; }
+.tighten-down { margin-bottom: -25px; }
+.tighten-down-more { margin-bottom: -50px; }
+
+.border-box {
+    width: 200px;
+    height: 40px;
+}
+
+
+/* --  Section Class Level  -- */
+.hero.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero.content {
+    font-size: 1.3em;
+}
+
+h1.hero {
+    margin-top: 0;
+}
+
+.projects.panel {
+    background-color: #111;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-photo {
+    background-size: cover;
+    min-height: 800px;
+    min-width: 100%;
+}
+
+
+/* --  Section Class Level  -- */
+#hero-scroll-down-tooltip {
+    margin-top: 5em;
+    color: #111;
+}
+
+#selected-project {
+    border: 3px solid #FFF;
+    padding: .5em;
+    min-width: 300px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#project-selection {
+    display: flex;
+    align-items: center;
+    min-width: 420px;
+    justify-content: space-around;
+}
+
+#pillpack-photo {
+    background: url("./img/pillpack_dispenser.jpg") no-repeat top left;
+    background-size: cover;
+}
+
+#brightbox-photo {
+    background: url("./img/agastya_brightbox.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#aquaponics-photo {
+    background: url("./img/grove_aquaponics.webp") no-repeat center;
+    background-size: cover;
+}
