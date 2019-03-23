@@ -1,6 +1,7 @@
 /* --  Tag Level  -- */
 html, body {
     margin: 0;
+    height: 100%;
 }
 
 h1, h2, h3, header {
@@ -24,9 +25,8 @@ header {
     font-weight: normal;
 }
 
-p {
-    font-family: "Amiri", serif;
-}
+p { font-family: "Amiri", serif; }
+a { color: black; }
 
 
 /* --  Generic Class Level  -- */
@@ -38,10 +38,6 @@ p {
 
 .content-box {
     width: 768px;
-}
-
-.full-width {
-    width: 100%;
 }
 
 .centered-single-column {
@@ -61,8 +57,20 @@ p {
 .left-border { border-left: 2px solid #111; }
 
 .tighten-up { margin-top: -25px; }
+.loosen-up { margin-top: 25px; }
+.loosen-up-more { margin-top: 50px; }
 .tighten-down { margin-bottom: -25px; }
 .tighten-down-more { margin-bottom: -50px; }
+
+.left-margin { margin-left: 1em; }
+
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+
+.vcenter-content {
+    display: flex;
+    align-items: center;
+}
 
 .border-box {
     width: 200px;
@@ -78,7 +86,9 @@ p {
 }
 
 .hero.content {
-    font-size: 1.3em;
+    font-size: 1.25em;
+    padding: 0 2em 0 1em;
+    word-wrap: break-word;
 }
 
 h1.hero {
