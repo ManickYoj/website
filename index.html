@@ -1,17 +1,17 @@
-<html>
+<html class="dark-mode">
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/solid.css" integrity="sha384-S2gVFTIn1tJ/Plf+40+RRAxBCiBU5oAMFUJxTXT3vOlxtXm7MGjVj62mDpbujs4C" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/fontawesome.css" integrity="sha384-0b7ERybvrT5RZyD80ojw6KNKz6nIAlgOKXIcJ0CV7A6Iia8yt2y1bBfLBOwoc9fQ" crossorigin="anonymous">
   </head>
-  <body>
-    <header>
-      <!-- <h3>Nick Francisci</h3> -->
-    </header>
-    <div id="hero-panel" class="hero panel">
 
-      <div class="hero content-box">
+  <body>
+    <!-- Intro Section -->
+    <div class="square-off-diagonal-top light-mode"></div>
+    <div id="hero-panel" class="hero panel light-mode diagonal-wrapper tighten-up-diagonal">
+
+      <div class="hero content-box very-generous-top-margin reset-diagonal very-generous-bottom-margin">
         <div class="full-width justify-children-right">
           <div class="top-border right-border border-box tighten-down-more"></div>
         </div>
@@ -19,55 +19,67 @@
         <h1 class="hero">Hello.</h1>
 
         <p class="hero content">
-           I'm Nick Francisci, an engineer motivated by helping folks access the fundamentals of life: wholesome food, education, and healthcare. Right now, I'm living near Boston and writing software at Pillpack - a pharmacy that simplifies managing multiple medications. In my free time, I enjoy drawing, fixing my motorcycle, and playing games.
+           I'm Nick Francisci, an engineer motivated by helping folks access the fundamentals of life: wholesome food, education, and healthcare. Right now, I'm living near Boston and managing software engineers at Pillpack - a pharmacy that simplifies managing multiple medications. In my free time, I make (and play) video games. I use this site to write about those topics. <b>Welcome.</b>
         </p>
 
-        <div id="hero-scroll-down-tooltip" class="full-width justify-children-right">
-          <div class="centered-single-column">
-            <h5>scroll down</h5>
-            <i class="fas fa-chevron-down fa"></i>
-          </div>
-        </div>
+        <p class="hero content">
+          PS. I'm not looking for a new job right now, but if you'd like to get in touch, my contact info is on my <a href="./resume.pdf">resume</a>.
+        </p>
 
-        <div class="left-border bottom-border border-box tighten-up"></div>
+        <div class="left-border bottom-border border-box loosen-up-more"></div>
       </div>
     </div>
 
-    <div class="projects panel">
+    <!-- Article Section -->
+    <div id="blog-index" class="panel no-bottom-margin dark-mode">
+      <div class ="content-box">
+        <h1 class="tighten-up-more light-mode pull-title-left no-bottom-margin inline"> Articles </h1>
 
-        <!-- <div class="content-box">
-            <h2 class="projects">Projects</h3>
-        </div> -->
-        <div id="pillpack-photo" class="project-photo">
+        <!-- Article Listing -->
 
-        </div>
+        <ul class="unstyled">
+          <li class="space-between content unstyled">
+            <p><a href="./blog/ruby_best_practices_pt1.html">Ruby on Rails Best Practices, Part I</a></p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>February 21st, 2021</p>
+          </li>
 
-        <div id="brightbox-photo" class="project-photo">
+          <li class="space-between content unstyled">
+            <p>Ruby on Rails Best Practices, Part II-V</p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>TBD</p>
+          </li>
 
-        </div>
+          <li class="space-between content unstyled">
+            <p>RSpec Testing Best Practices</p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>TBD</p>
+          </li>
 
-        <div id="athenahealth-photo" class="project-photo">
+          <li class="space-between content unstyled">
+            <p>Rotating Hexagonal Tilemaps in Unity</p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>TBD</p>
+          </li>
 
-        </div>
+          <li class="space-between content unstyled">
+            <p>Building a Sims-Like AI in Unity</p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>TBD</p>
+          </li>
 
-        <div id="aquaponics-photo" class="project-photo">
+          <li class="space-between content unstyled">
+            <p>Creating Controls for a (2.5D) City-Builder in Unity</p>
+            <p class="flex-grow dotted-underline"></p>
+            <p>TBD</p>
+          </li>
 
-        </div>
-<!-- 
-        <div class="projects content-box">
-          <div id="project-selection">
-            <i class="fas fa-caret-left fa-2x"></i>
-            <div id="selected-project" class="roboto">
-              00 - BrightBox
-            </div>
-            <i class="fas fa-caret-right fa-2x"></i>
-          </div>
-        </div>
- -->        <p>
+        </ul>
 
-        </p>
-
+        <p>See an article in this list that's got a TBD date and want it to jump to the top of my writing queue? Send an an email to the address on my <a href="./resume.pdf">resume</a> and let me know!</p>
       </div>
     </div>
+
+    <!-- <div class="panel diagonal-wrapper-square-off dark-mode"></div> -->
   </body>
 </html>
