@@ -2,7 +2,9 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-size: 20px;
 }
+
 
 h1, h2, h3, header {
     font-family: "Roboto", sans-serif;
@@ -13,8 +15,8 @@ h4, h5 {
     margin: 0;
 }
 
-h1 { font-size: 5em; }
-h2 { font-size: 4em; }
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem; }
 
 header {
     min-height: 36px;
@@ -25,8 +27,14 @@ header {
     font-weight: normal;
 }
 
-p { font-family: "Amiri", serif; }
-a { color: inherit; }
+p {
+    font-family: "Amiri", serif;
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+}
 
 /* --  Generic Class Level  -- */
 .panel {
@@ -53,13 +61,12 @@ a { color: inherit; }
 }
 
 .content-box {
-    width: 768px;
+    max-width: 768px;
 }
 
 .space-between {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .centered-single-column {
@@ -118,6 +125,9 @@ a { color: inherit; }
 }
 
 .left-margin { margin-left: 1em; }
+.small-top-margin { margin-top: 0.5rem; }
+.adequate-top-margin { margin-top: 1rem; }
+.adequate-bottom-margin { margin-bottom: 1rem; }
 .generous-top-margin { margin-top: 5em; }
 .generous-bottom-margin { margin-bottom: 5em; }
 .very-generous-bottom-margin { margin-bottom: 10em; }
@@ -166,19 +176,18 @@ ul.unstyled {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+    font-size: 24px;
 }
 
 li.unstyled {
     padding: 0;
 }
 
-.content {
-    font-size: 1.25em;
+.small-text {
+    font-size: 1rem;
 }
 
 /* --  Section Class Level  -- */
-
-
 .hero.content {
     padding: 0 2em 0 1em;
     word-wrap: break-word;
@@ -188,53 +197,22 @@ h1.hero {
     margin-top: 0;
 }
 
-.projects.panel {
-    background-color: inherit;
-    color: inherit;
-    font-family: "Roboto", sans-serif;
-    flex-direction: column;
-    align-items: center;
+/* For reasons I do not understand, mobile browsers resize ONLY the
+space-between groups in the articles section. As such, we make a
+specific effort to inflate these text sizes on mobile*/
+
+/* Web */
+@media (min-width: 1025px) {
+    .article-listing {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
 }
 
-.project-photo {
-    background-size: cover;
-    min-height: 800px;
-    min-width: 100%;
-}
-
-
-/* --  Section Class Level  -- */
-#hero-scroll-down-tooltip {
-    margin-top: 5em;
-    color: inherit;
-}
-
-#selected-project {
-    border: 3px solid inherit;
-    padding: .5em;
-    min-width: 300px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#project-selection {
-    display: flex;
-    align-items: center;
-    min-width: 420px;
-    justify-content: space-around;
-}
-
-#pillpack-photo {
-    background: url("./img/pillpack_dispenser.jpg") no-repeat top left;
-    background-size: cover;
-}
-
-#brightbox-photo {
-    background: url("./img/agastya_brightbox.jpg") no-repeat center;
-    background-size: cover;
-}
-
-#aquaponics-photo {
-    background: url("./img/grove_aquaponics.webp") no-repeat center;
-    background-size: cover;
+/* Mobile */
+@media (max-width: 1024px) {
+   .article-listing {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
 }
