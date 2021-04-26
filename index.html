@@ -18,11 +18,11 @@
 
         <h1 class="hero">Hello.</h1>
 
-        <p class="hero content">
-           I'm Nick Francisci, an engineer motivated by helping folks access the fundamentals of life: wholesome food, education, and healthcare. Right now, I'm living near Boston and managing software engineers at Pillpack - a pharmacy that simplifies managing multiple medications. In my free time, I make (and play) video games. I use this site to write about those topics. <b>Welcome.</b>
+        <p class="hero">
+           I'm Nick Francisci, an engineer motivated by helping folks access the fundamentals of life: wholesome food, education, and healthcare. Right now, I'm living near Boston and managing software engineers at Pillpack - a pharmacy that simplifies managing multiple medications. In my free time, I make (and play) video games. I use this site to write about these topics.
         </p>
 
-        <p class="hero content">
+        <p class="hero">
           PS. I'm not looking for a new job right now, but if you'd like to get in touch, my contact info is on my <a href="./resume.pdf">resume</a>.
         </p>
 
@@ -31,52 +31,65 @@
     </div>
 
     <!-- Article Section -->
-    <div id="blog-index" class="panel no-bottom-margin dark-mode">
-      <div class ="content-box">
+    <div id="blog-index" class="panel dark-mode">
+      <div class ="content-box generous-bottom-margin">
         <h1 class="tighten-up-more light-mode pull-title-left no-bottom-margin inline"> Articles </h1>
 
         <!-- Article Listing -->
+        <!-- This was a ul, but mobile browsers seem to flat out acknowledge than ignore
+          font sizes for ul/lis so here we are in non-semantic div country once more.-->
+        <div class="space-between article-listing adequate-top-margin">
+          <span>
+            <a href="./blog/ruby_best_practices_pt1.html">
+              Ruby on Rails Best Practices, Part I
+            </a>
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>Feb 21st, 2021</span>
+        </div>
 
-        <ul class="unstyled">
-          <li class="space-between content unstyled">
-            <p><a href="./blog/ruby_best_practices_pt1.html">Ruby on Rails Best Practices, Part I</a></p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>February 21st, 2021</p>
-          </li>
+         <div class="space-between article-listing">
+          <span>
+            Ruby on Rails Best Practices, Part II-V
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>TBD</span>
+        </div>
 
-          <li class="space-between content unstyled">
-            <p>Ruby on Rails Best Practices, Part II-V</p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>TBD</p>
-          </li>
+        <div class="space-between article-listing">
+          <span>
+            RSpec Testing Best Practices
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>TBD</span>
+        </div>
 
-          <li class="space-between content unstyled">
-            <p>RSpec Testing Best Practices</p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>TBD</p>
-          </li>
+        <div class="space-between article-listing">
+          <span>
+            Rotating Hexagonal Tilemaps in Unity
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>TBD</span>
+        </div>
 
-          <li class="space-between content unstyled">
-            <p>Rotating Hexagonal Tilemaps in Unity</p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>TBD</p>
-          </li>
+        <div class="space-between article-listing">
+          <span>
+            Building a Sims-Like AI in Unity
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>TBD</span>
+        </div>
 
-          <li class="space-between content unstyled">
-            <p>Building a Sims-Like AI in Unity</p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>TBD</p>
-          </li>
 
-          <li class="space-between content unstyled">
-            <p>Creating Controls for a (2.5D) City-Builder in Unity</p>
-            <p class="flex-grow dotted-underline"></p>
-            <p>TBD</p>
-          </li>
+        <div class="space-between article-listing">
+          <span>
+            Tips for Creating a (2.5D) City-Builder in Unity
+          </span>
+          <span class="flex-grow dotted-underline"></span>
+          <span>TBD</span>
+        </div>
 
-        </ul>
-
-        <p>See an article in this list that's got a TBD date and want it to jump to the top of my writing queue? Send an an email to the address on my <a href="./resume.pdf">resume</a> and let me know!</p>
+        <p class="small-text">See an article in this list that's got a TBD date and want it to jump to the top of my writing queue? Send an an email to the address on my <a href="./resume.pdf">resume</a> and let me know!</p>
       </div>
     </div>
 
